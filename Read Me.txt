@@ -1,0 +1,7 @@
+The UAV function here prunes the path based  on :
+1. It visits all the points which lie on the line formed by two points.
+2. Calculates the expected height of every point.
+3. For any point on the line, If expected height is lesser than the terrain height at that point, add the point just before it and start looking from there.
+4. If all points passes the test, move to another point, to check if it can be directly connected.
+
+Blue line Shows the Pruned path, whereas black line shows the path obtained from RRT
